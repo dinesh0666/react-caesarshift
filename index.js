@@ -32,6 +32,9 @@ class App extends Component {
   render() {
     return (
       <div>
+      caesar cipher: 
+      <br />
+      <br />
       <label>
       Enter the Text to Encryt :
       </label>
