@@ -7,7 +7,7 @@ class App extends Component {
     super();
     this.state = {
       text: 'React',
-      decrytText :''
+      encryptText :''
     };
   }
 
@@ -24,7 +24,7 @@ class App extends Component {
         text:e.target.value
     },()=>{
       this.setState({
-        decrytText:this.caesarShift(this.state.text,1)
+        encryptText:this.caesarShift(this.state.text,1)
       })
     })
   }
@@ -37,7 +37,7 @@ class App extends Component {
       </label>
       <input type = "text"  onChange={this.onChange}/>
       <div>
-      Encrypted Text:{this.state.decrytText}
+      Encrypted Text:{this.state.encryptText}
       </div>
       </div>
     );
