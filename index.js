@@ -13,7 +13,7 @@ class App extends Component {
 
 
 //The fromCharCode() method converts Unicode values into characters.
-//Return the Unicode of the first character in a string (the Unicode value for "H"):
+//Return the Unicode of the first character in a string 
   caesarShift = (str, key) =>{
   return str.toUpperCase().replace(/[A-Z]/g, c => String.fromCharCode((c.charCodeAt(0)-65+key)%26+65))
 }
