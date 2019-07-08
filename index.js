@@ -38,7 +38,7 @@ class App extends Component {
       <label>
       Enter the Text to Encryt :
       </label>
-      <input type = "text"  onChange={this.onChange}/>
+      <input type = "text"  onChange={this.onChange} value={this.state.text}/>
       <div>
       Encrypted Text:{this.state.encryptText}
       </div>
